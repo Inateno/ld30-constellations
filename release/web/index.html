@@ -1,0 +1,104 @@
+﻿<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Constellations</title>
+    
+    <meta name="description" content="Constellations is a little game made during the Ludum Dare 30 as a compo entry">
+    <meta name="keywords" content="constellations game html5 dreamengine dreamirl ludum dare">
+    <meta name="author" content="Dreamirl">
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+    <meta name="viewport" 
+      content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="img/64x64.png" />
+    <link rel="icon" type="image/png" href="img/128x128.png" />
+    
+    <!-- apple web-app -->
+    <link rel="apple-touch-icon-precomposed" href="img/128x128.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="apple-touch-startup-image" href="img/128x128.png" />
+  </head>
+    <body>
+      <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&appId=381877878522759&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+      <div id="render">
+        <div id="notifsContainer"></div>
+        <div class="custom-panel" id="about">
+          <div class="panel">
+            <h1>Hey !</h1>
+            <p>
+              I'm Inateno an indie game developer.<br />
+              Hope you like the game, let me know on Twitter :)
+              <br /><br />
+              Check my other games on <a style="color:orange" href="http://dreamirl.com">Dreamirl.com</a>
+              <br />
+              See ya !
+              <br /><br /><br />
+              PS: This game, sources arts and sounds aren't free to use, if you want it on your website, ask me on Twitter, I'll not bit you (or maybe a little).
+            </p>
+          </div>
+          <div class="back"><<</div>
+        </div>
+        <div class="custom-panel" id="scores">
+          <div class="panel">
+            <h2>High Scores</h2>
+            <h3>Your high score: <span class="go-localScore">1</span></h3>
+            <div class="highscores">
+              <span>Oops no internet connection available try later ?</span>
+            </div>
+          </div>
+          <div class="back"><<</div>
+        </div>
+        <div class="custom-panel" id="gameOver">
+          <div class="panel">
+            <h1 class="go-title">Not bad</h1>
+            <h2 class="go-score">42</h2>
+            <div class="go-newBestScore">
+              <h3>New best score!</h3>
+              <input class="go-nick" type="text" value="Nickname" />
+              <button class="go-saveBtn">Save</button>
+            </div>
+            <p class="go-yourBestScore">Your best: 48</p>
+            <div class="replay"></div>
+            <div>
+              <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://inateno.com/games/constellations" data-text="Try the game Constellations made for Ludum Dare #constellationsgame" data-via="Inateno" data-size="large" data-related="DreamirlGames" data-hashtags="LD30">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+              
+              <div class="fb-share-button" data-href="http://inateno.com/games/constellations"></div>
+              <div class="fb-like" data-href="https://www.facebook.com/Dreamirl" data-layout="button" data-action="like" data-show-faces="true"></div>
+            </div>
+          </div>
+          <div class="back"><<</div>
+        </div>
+        <div id="Dreamirl-Nebula"></div>
+      </div>
+      
+      <div id="notificationTemplate" class="dreamTemplate">
+        <div>
+          <span class="content"></span>
+          <div class="notifClose">X</div>
+        </div>
+      </div>
+      
+		  <script type="text/javascript" src="require.js" data-main="game"></script>
+      <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32283976-13', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>
